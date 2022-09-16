@@ -1,0 +1,6052 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HousingCalculator</class>
+ <widget class="QMainWindow" name="HousingCalculator">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1100</width>
+    <height>893</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Garamond</family>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>-130</x>
+      <y>70</y>
+      <width>1041</width>
+      <height>861</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Garamond</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="currentIndex">
+     <number>16</number>
+    </property>
+    <widget class="QWidget" name="page0">
+     <widget class="QLabel" name="lblTitle">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>10</y>
+        <width>411</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Garamond</family>
+        <pointsize>26</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Housing Charge Calculator</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblname">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>80</y>
+        <width>47</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Name</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cboname">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>90</y>
+        <width>120</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblveraionname">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>140</y>
+        <width>181</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>[versonname]</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblversonno">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>200</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Version No.</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="versionnno">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>200</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>[versionno]</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbkpicture">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>300</y>
+        <width>801</width>
+        <height>331</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Picture</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblwrwi">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>690</y>
+        <width>148</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Garamond</family>
+        <pointsize>8</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>WRWoods Infornstion</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblsolutions_inc">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>780</y>
+        <width>148</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Garamond</family>
+        <pointsize>8</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Solutions Inc.</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbllogo">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>700</y>
+        <width>71</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>Images/site_logo.gif</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbladdress1">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>690</y>
+        <width>148</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Garamond</family>
+        <pointsize>8</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>22-456  Kimgdcourt Drive</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbltelephone">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>780</y>
+        <width>148</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Garamond</family>
+        <pointsize>8</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>519-886-6649</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbladdress2">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>710</y>
+        <width>148</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Garamond</family>
+        <pointsize>8</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Waterloo, On.  N2K 3S1</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page1">
+     <widget class="QLabel" name="lblinput">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>10</y>
+        <width>411</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Garamond</family>
+        <pointsize>26</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Input</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblselecteffectivedate">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>70</y>
+        <width>200</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Select Effective Date</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblselectunit">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>100</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Select Unit</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblseletperson">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>80</y>
+        <width>120</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Select Person</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblselectprocessdate">
+      <property name="geometry">
+       <rect>
+        <x>760</x>
+        <y>70</y>
+        <width>200</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Select Process Date</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblselectnoofmrmbers">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>170</y>
+        <width>200</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Numbers of Members</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblfamilysise">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>170</y>
+        <width>100</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Family Size</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cbounit">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>130</y>
+        <width>69</width>
+        <height>23</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cboperson">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>130</y>
+        <width>150</width>
+        <height>23</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="spinBox">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>200</y>
+        <width>42</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="spinBoxfamilysize">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>200</y>
+        <width>42</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>13</number>
+      </property>
+     </widget>
+     <widget class="QScrollArea" name="samame">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>250</y>
+        <width>841</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>839</width>
+         <height>159</height>
+        </rect>
+       </property>
+       <widget class="Line" name="line">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>-10</y>
+          <width>1021</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>150</y>
+          <width>1021</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>20</y>
+          <width>1021</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_4">
+        <property name="geometry">
+         <rect>
+          <x>-17</x>
+          <y>30</y>
+          <width>20</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_5">
+        <property name="geometry">
+         <rect>
+          <x>-17</x>
+          <y>20</y>
+          <width>20</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_6">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>30</y>
+          <width>3</width>
+          <height>125</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>31</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>No.</string>
+        </property>
+       </widget>
+       <widget class="Line" name="line_7">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>0</y>
+          <width>20</width>
+          <height>160</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_8">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>0</y>
+          <width>20</width>
+          <height>160</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_20">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>0</y>
+          <width>151</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Name of Member</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_21">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>0</y>
+          <width>100</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Raw Income</string>
+        </property>
+       </widget>
+       <widget class="Line" name="line_9">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>0</y>
+          <width>20</width>
+          <height>160</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_10">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>0</y>
+          <width>20</width>
+          <height>180</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_11">
+        <property name="geometry">
+         <rect>
+          <x>510</x>
+          <y>0</y>
+          <width>20</width>
+          <height>160</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_12">
+        <property name="geometry">
+         <rect>
+          <x>830</x>
+          <y>0</y>
+          <width>20</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_13">
+        <property name="geometry">
+         <rect>
+          <x>690</x>
+          <y>0</y>
+          <width>20</width>
+          <height>160</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblfreqency">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>0</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Frequency</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblmonthlyincome">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>0</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Monthly Income</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblprimsecd">
+        <property name="geometry">
+         <rect>
+          <x>520</x>
+          <y>0</y>
+          <width>171</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Primary/Secondonary</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lbkincortype">
+        <property name="geometry">
+         <rect>
+          <x>710</x>
+          <y>0</y>
+          <width>111</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Income Type</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="no">
+        <property name="geometry">
+         <rect>
+          <x>5</x>
+          <y>30</y>
+          <width>21</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="member">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>30</y>
+          <width>151</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="dollar">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>30</y>
+          <width>16</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>$</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="rawincome">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>40</y>
+          <width>71</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="frequency">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>30</y>
+          <width>69</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="promsecomd">
+        <property name="geometry">
+         <rect>
+          <x>520</x>
+          <y>30</y>
+          <width>171</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="incometype">
+        <property name="geometry">
+         <rect>
+          <x>700</x>
+          <y>30</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="dollar_2">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>30</y>
+          <width>16</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>$</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="monthlyincome">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>30</y>
+          <width>71</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="rawincome_2">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>50</y>
+          <width>71</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QDateEdit" name="dateEditeffectivedate">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>130</y>
+        <width>150</width>
+        <height>23</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QDateEdit" name="dateEditprocess">
+      <property name="geometry">
+       <rect>
+        <x>780</x>
+        <y>130</y>
+        <width>150</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbltotalincome">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>410</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Total Income</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="totalincome">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>430</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbladdress">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>450</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Address</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblunitty">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>440</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Unit Type</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="address">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>490</y>
+        <width>411</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="unittype">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>490</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbltotalhc">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>810</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Total Housing Charge</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblincomesource">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>800</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Income Source</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblregionpays">
+      <property name="geometry">
+       <rect>
+        <x>750</x>
+        <y>790</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Region Pays</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblbasehc">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>760</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Base Housing Charge</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblutilityallow">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>750</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Less Utility Allowamce</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblmarketrent">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>730</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Market Rent</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblminiumrent">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>720</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Mininum Rent</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblmemberfee">
+      <property name="geometry">
+       <rect>
+        <x>750</x>
+        <y>720</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Membership Fees</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblsummary">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>700</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Garamond</family>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="text">
+       <string>Summary</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="dollar_3">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>730</y>
+        <width>16</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>$</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="dollar_4">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>720</y>
+        <width>16</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>$</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="dollar_5">
+      <property name="geometry">
+       <rect>
+        <x>880</x>
+        <y>720</y>
+        <width>16</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>$</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="dollar_6">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>760</y>
+        <width>16</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>$</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="dollar_7">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>750</y>
+        <width>16</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>$</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="dollar_8">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>810</y>
+        <width>16</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>$</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="dollar_9">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>800</y>
+        <width>16</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>$</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="dollar_19">
+      <property name="geometry">
+       <rect>
+        <x>880</x>
+        <y>790</y>
+        <width>16</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>$</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="marketrent">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>730</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="inimumrent">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>720</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="memberfee">
+      <property name="geometry">
+       <rect>
+        <x>900</x>
+        <y>720</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="basehc">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>760</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="utilityallow">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>750</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="totohc">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>810</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="incomesource">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>800</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="regionpays">
+      <property name="geometry">
+       <rect>
+        <x>900</x>
+        <y>790</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QStackedWidget" name="stackedWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>540</y>
+        <width>1061</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="QWidget" name="page_18"/>
+      <widget class="QWidget" name="page_20">
+       <widget class="QLabel" name="lblincomeearmed">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>151</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Garamond</family>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+          <underline>true</underline>
+         </font>
+        </property>
+        <property name="text">
+         <string>Income - Earned</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lbltotalincome_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>30</y>
+          <width>111</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Total Income</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="dollar_23">
+        <property name="geometry">
+         <rect>
+          <x>700</x>
+          <y>10</y>
+          <width>16</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>$</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="totalincomeearned">
+        <property name="geometry">
+         <rect>
+          <x>720</x>
+          <y>10</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>70</y>
+          <width>271</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Apply Employmemt Exemption</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="dollar_24">
+        <property name="geometry">
+         <rect>
+          <x>695</x>
+          <y>40</y>
+          <width>21</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>-$</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="employmentallowance">
+        <property name="geometry">
+         <rect>
+          <x>720</x>
+          <y>40</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="earnedpct">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>100</y>
+          <width>31</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblpctof">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>120</y>
+          <width>291</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>% of                                                $</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="netincome">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>120</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lbleqbasehc">
+        <property name="geometry">
+         <rect>
+          <x>510</x>
+          <y>110</y>
+          <width>191</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>=  Base Housing Charge</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="basehc1">
+        <property name="geometry">
+         <rect>
+          <x>730</x>
+          <y>110</y>
+          <width>171</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="dollar_25">
+        <property name="geometry">
+         <rect>
+          <x>710</x>
+          <y>110</y>
+          <width>16</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>$</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="pct1">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>130</y>
+          <width>41</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_19">
+       <widget class="QLabel" name="lblincomesocialassesstance">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>221</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Garamond</family>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+          <underline>true</underline>
+         </font>
+        </property>
+        <property name="text">
+         <string>Income - Social Assistance</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lbltotalincomesa">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>30</y>
+          <width>111</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Total Income</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="dollar_11">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>30</y>
+          <width>16</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>$</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="totalincomeesa">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>40</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblrentscla">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>30</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Rent Scale</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lbltheshold">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>30</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Threshold</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblexthreshold">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>30</y>
+          <width>171</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Excess over Threshold</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="employmentallowance_2">
+        <property name="geometry">
+         <rect>
+          <x>700</x>
+          <y>80</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="netthresholdprim">
+        <property name="geometry">
+         <rect>
+          <x>690</x>
+          <y>70</y>
+          <width>111</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblpctsecondA">
+        <property name="geometry">
+         <rect>
+          <x>490</x>
+          <y>120</y>
+          <width>51</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>% of $</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblforprimary">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>60</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Garamond</family>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+          <underline>true</underline>
+         </font>
+        </property>
+        <property name="text">
+         <string>For Primary</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lbsecondary">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>110</y>
+          <width>121</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Garamond</family>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+          <underline>true</underline>
+         </font>
+        </property>
+        <property name="text">
+         <string>For Secondary</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="primname">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>90</y>
+          <width>221</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="rentscaleprim">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>80</y>
+          <width>51</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="thresholdprim">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>80</y>
+          <width>71</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="dollar_12">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>80</y>
+          <width>16</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>$</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="dollar_13">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>80</y>
+          <width>16</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>$</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="pctprim">
+        <property name="geometry">
+         <rect>
+          <x>440</x>
+          <y>80</y>
+          <width>41</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="esxhesholdsecond">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>80</y>
+          <width>71</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblequal">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>70</y>
+          <width>16</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>=</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QStackedWidget" name="stackedWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>150</y>
+          <width>1121</width>
+          <height>861</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Garamond</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="currentIndex">
+         <number>1</number>
+        </property>
+        <widget class="QWidget" name="page_21">
+         <widget class="QLabel" name="lblTitle_2">
+          <property name="geometry">
+           <rect>
+            <x>380</x>
+            <y>10</y>
+            <width>411</width>
+            <height>45</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Garamond</family>
+            <pointsize>26</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Housing Charge Calculator</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_22">
+          <property name="geometry">
+           <rect>
+            <x>670</x>
+            <y>80</y>
+            <width>47</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Name</string>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="comboBox_2">
+          <property name="geometry">
+           <rect>
+            <x>730</x>
+            <y>90</y>
+            <width>120</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="lblveraionname_2">
+          <property name="geometry">
+           <rect>
+            <x>540</x>
+            <y>140</y>
+            <width>181</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>[versonname]</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="lblversonno_2">
+          <property name="geometry">
+           <rect>
+            <x>470</x>
+            <y>200</y>
+            <width>101</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Version No.</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_23">
+          <property name="geometry">
+           <rect>
+            <x>590</x>
+            <y>200</y>
+            <width>101</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>[versionno]</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="lbkpicture_2">
+          <property name="geometry">
+           <rect>
+            <x>260</x>
+            <y>300</y>
+            <width>801</width>
+            <height>331</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Picture</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_24">
+          <property name="geometry">
+           <rect>
+            <x>350</x>
+            <y>690</y>
+            <width>148</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Garamond</family>
+            <pointsize>8</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>WRWoods Infornstion</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="lblsolutions_inc_2">
+          <property name="geometry">
+           <rect>
+            <x>350</x>
+            <y>780</y>
+            <width>148</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Garamond</family>
+            <pointsize>8</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Solutions Inc.</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="lbllogo_2">
+          <property name="geometry">
+           <rect>
+            <x>500</x>
+            <y>700</y>
+            <width>71</width>
+            <height>101</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap>Images/site_logo.gif</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="lbladdress1_2">
+          <property name="geometry">
+           <rect>
+            <x>570</x>
+            <y>690</y>
+            <width>148</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Garamond</family>
+            <pointsize>8</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>22-456  Kimgdcourt Drive</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="lbladdressq2_2">
+          <property name="geometry">
+           <rect>
+            <x>570</x>
+            <y>700</y>
+            <width>148</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Garamond</family>
+            <pointsize>8</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Waterloo, On  N2K 3S1</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="lbltelephone_2">
+          <property name="geometry">
+           <rect>
+            <x>570</x>
+            <y>780</y>
+            <width>148</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Garamond</family>
+            <pointsize>8</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>519-886-6649</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_22">
+         <widget class="QLabel" name="lblinput_2">
+          <property name="geometry">
+           <rect>
+            <x>380</x>
+            <y>10</y>
+            <width>411</width>
+            <height>45</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Garamond</family>
+            <pointsize>26</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Input</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="lblselecteffectivedate_4">
+          <property name="geometry">
+           <rect>
+            <x>450</x>
+            <y>70</y>
+            <width>200</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Select Effective Date</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="lblselectunit_2">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>80</y>
+            <width>100</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Select Unit</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="lblselecteffectivedate_5">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>80</y>
+            <width>120</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Select Person</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="lblselectprocessdate_2">
+          <property name="geometry">
+           <rect>
+            <x>760</x>
+            <y>70</y>
+            <width>200</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Select Process Date</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="lblselecteffectivedate_6">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>170</y>
+            <width>200</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Numbers of Members</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="lblfamilysise_2">
+          <property name="geometry">
+           <rect>
+            <x>510</x>
+            <y>170</y>
+            <width>100</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Family Size</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="cbounit_2">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>130</y>
+            <width>69</width>
+            <height>23</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="cboperson_2">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>130</y>
+            <width>150</width>
+            <height>23</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_2">
+          <property name="geometry">
+           <rect>
+            <x>110</x>
+            <y>200</y>
+            <width>42</width>
+            <height>31</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBoxfamilysize_2">
+          <property name="geometry">
+           <rect>
+            <x>540</x>
+            <y>200</y>
+            <width>42</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="maximum">
+           <number>13</number>
+          </property>
+         </widget>
+         <widget class="QScrollArea" name="samame_2">
+          <property name="geometry">
+           <rect>
+            <x>110</x>
+            <y>250</y>
+            <width>841</width>
+            <height>161</height>
+           </rect>
+          </property>
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_3">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>839</width>
+             <height>159</height>
+            </rect>
+           </property>
+           <widget class="Line" name="line_14">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>-10</y>
+              <width>1021</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+           <widget class="Line" name="line_15">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>150</y>
+              <width>1021</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+           <widget class="Line" name="line_16">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>20</y>
+              <width>1021</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+           <widget class="Line" name="line_17">
+            <property name="geometry">
+             <rect>
+              <x>-17</x>
+              <y>30</y>
+              <width>20</width>
+              <height>121</height>
+             </rect>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+           <widget class="Line" name="line_18">
+            <property name="geometry">
+             <rect>
+              <x>-17</x>
+              <y>20</y>
+              <width>20</width>
+              <height>131</height>
+             </rect>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+           <widget class="Line" name="line_19">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>30</y>
+              <width>3</width>
+              <height>125</height>
+             </rect>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_25">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>31</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>No.</string>
+            </property>
+           </widget>
+           <widget class="Line" name="line_20">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>0</y>
+              <width>20</width>
+              <height>160</height>
+             </rect>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+           <widget class="Line" name="line_21">
+            <property name="geometry">
+             <rect>
+              <x>180</x>
+              <y>0</y>
+              <width>20</width>
+              <height>160</height>
+             </rect>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_26">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>0</y>
+              <width>151</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Name of Member</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_27">
+            <property name="geometry">
+             <rect>
+              <x>190</x>
+              <y>0</y>
+              <width>100</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Raw Income</string>
+            </property>
+           </widget>
+           <widget class="Line" name="line_22">
+            <property name="geometry">
+             <rect>
+              <x>280</x>
+              <y>0</y>
+              <width>20</width>
+              <height>160</height>
+             </rect>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+           <widget class="Line" name="line_23">
+            <property name="geometry">
+             <rect>
+              <x>370</x>
+              <y>0</y>
+              <width>20</width>
+              <height>180</height>
+             </rect>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+           <widget class="Line" name="line_24">
+            <property name="geometry">
+             <rect>
+              <x>510</x>
+              <y>0</y>
+              <width>20</width>
+              <height>160</height>
+             </rect>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+           <widget class="Line" name="line_25">
+            <property name="geometry">
+             <rect>
+              <x>830</x>
+              <y>0</y>
+              <width>20</width>
+              <height>151</height>
+             </rect>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+           <widget class="Line" name="line_26">
+            <property name="geometry">
+             <rect>
+              <x>690</x>
+              <y>0</y>
+              <width>20</width>
+              <height>160</height>
+             </rect>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+           <widget class="QLabel" name="lblfreqency_2">
+            <property name="geometry">
+             <rect>
+              <x>300</x>
+              <y>0</y>
+              <width>81</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Frequency</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="lblmonthlyincome_2">
+            <property name="geometry">
+             <rect>
+              <x>390</x>
+              <y>0</y>
+              <width>131</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Monthly Income</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="lblprimsecd_2">
+            <property name="geometry">
+             <rect>
+              <x>520</x>
+              <y>0</y>
+              <width>171</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Primary/Secondonary</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="lbkincortype_2">
+            <property name="geometry">
+             <rect>
+              <x>710</x>
+              <y>0</y>
+              <width>111</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Income Type</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="no_2">
+            <property name="geometry">
+             <rect>
+              <x>5</x>
+              <y>30</y>
+              <width>21</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="member_2">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>30</y>
+              <width>151</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="dollar_15">
+            <property name="geometry">
+             <rect>
+              <x>190</x>
+              <y>30</y>
+              <width>16</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>$</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="rawincome_3">
+            <property name="geometry">
+             <rect>
+              <x>210</x>
+              <y>40</y>
+              <width>71</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QComboBox" name="frequency_2">
+            <property name="geometry">
+             <rect>
+              <x>290</x>
+              <y>30</y>
+              <width>69</width>
+              <height>31</height>
+             </rect>
+            </property>
+           </widget>
+           <widget class="QComboBox" name="promsecomd_2">
+            <property name="geometry">
+             <rect>
+              <x>520</x>
+              <y>30</y>
+              <width>171</width>
+              <height>31</height>
+             </rect>
+            </property>
+           </widget>
+           <widget class="QComboBox" name="incometype_2">
+            <property name="geometry">
+             <rect>
+              <x>700</x>
+              <y>30</y>
+              <width>131</width>
+              <height>31</height>
+             </rect>
+            </property>
+           </widget>
+           <widget class="QLabel" name="dollar_16">
+            <property name="geometry">
+             <rect>
+              <x>380</x>
+              <y>30</y>
+              <width>16</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>$</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="monthlyincome_2">
+            <property name="geometry">
+             <rect>
+              <x>410</x>
+              <y>30</y>
+              <width>71</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="rawincome_4">
+            <property name="geometry">
+             <rect>
+              <x>130</x>
+              <y>50</y>
+              <width>71</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QDateEdit" name="dateEditeffectivedate_2">
+          <property name="geometry">
+           <rect>
+            <x>480</x>
+            <y>130</y>
+            <width>150</width>
+            <height>23</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QDateEdit" name="dateEditprocess_2">
+          <property name="geometry">
+           <rect>
+            <x>780</x>
+            <y>130</y>
+            <width>150</width>
+            <height>31</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="lbltotalincome_2">
+          <property name="geometry">
+           <rect>
+            <x>350</x>
+            <y>410</y>
+            <width>111</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Total Income</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="totalincome_2">
+          <property name="geometry">
+           <rect>
+            <x>520</x>
+            <y>430</y>
+            <width>131</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="lbladdress_2">
+          <property name="geometry">
+           <rect>
+            <x>200</x>
+            <y>450</y>
+            <width>71</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Address</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="lblunitty_2">
+          <property name="geometry">
+           <rect>
+            <x>680</x>
+            <y>440</y>
+            <width>81</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Unit Type</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="address_2">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>490</y>
+            <width>411</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="unittype_2">
+          <property name="geometry">
+           <rect>
+            <x>620</x>
+            <y>490</y>
+            <width>201</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="lbltotalhc_2">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>810</y>
+            <width>171</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Total Housing Charge</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="lblincomesource_2">
+          <property name="geometry">
+           <rect>
+            <x>410</x>
+            <y>800</y>
+            <width>131</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Income Source</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="lblregionpays_2">
+          <property name="geometry">
+           <rect>
+            <x>750</x>
+            <y>790</y>
+            <width>131</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Region Pays</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="lblbasehc_2">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>760</y>
+            <width>171</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Base Housing Charge</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="lblutilityallow_2">
+          <property name="geometry">
+           <rect>
+            <x>370</x>
+            <y>750</y>
+            <width>171</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Less Utility Allowamce</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="lblmarketrent_2">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>730</y>
+            <width>131</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Market Rent</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="lblminiumrent_2">
+          <property name="geometry">
+           <rect>
+            <x>410</x>
+            <y>720</y>
+            <width>131</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Mininum Rent</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="lblmemberfee_2">
+          <property name="geometry">
+           <rect>
+            <x>750</x>
+            <y>720</y>
+            <width>131</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Membership Fees</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="lblsummary_2">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>700</y>
+            <width>131</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Garamond</family>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <italic>false</italic>
+            <bold>true</bold>
+            <underline>true</underline>
+           </font>
+          </property>
+          <property name="text">
+           <string>Summary</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="dollar_17">
+          <property name="geometry">
+           <rect>
+            <x>230</x>
+            <y>730</y>
+            <width>16</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>$</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="dollar_18">
+          <property name="geometry">
+           <rect>
+            <x>550</x>
+            <y>720</y>
+            <width>16</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>$</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="dollar_20">
+          <property name="geometry">
+           <rect>
+            <x>880</x>
+            <y>720</y>
+            <width>16</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>$</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="dollar_21">
+          <property name="geometry">
+           <rect>
+            <x>230</x>
+            <y>760</y>
+            <width>16</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>$</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="dollar_22">
+          <property name="geometry">
+           <rect>
+            <x>550</x>
+            <y>750</y>
+            <width>16</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>$</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="dollar_26">
+          <property name="geometry">
+           <rect>
+            <x>230</x>
+            <y>810</y>
+            <width>16</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>$</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="dollar_27">
+          <property name="geometry">
+           <rect>
+            <x>550</x>
+            <y>800</y>
+            <width>16</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>$</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="dollar_28">
+          <property name="geometry">
+           <rect>
+            <x>880</x>
+            <y>790</y>
+            <width>16</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>$</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="marketrent_2">
+          <property name="geometry">
+           <rect>
+            <x>250</x>
+            <y>730</y>
+            <width>71</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="inimumrent_2">
+          <property name="geometry">
+           <rect>
+            <x>570</x>
+            <y>720</y>
+            <width>71</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="memberfee_2">
+          <property name="geometry">
+           <rect>
+            <x>900</x>
+            <y>720</y>
+            <width>71</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="basehc_2">
+          <property name="geometry">
+           <rect>
+            <x>250</x>
+            <y>760</y>
+            <width>71</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="utilityallow_2">
+          <property name="geometry">
+           <rect>
+            <x>570</x>
+            <y>750</y>
+            <width>71</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="totohc_2">
+          <property name="geometry">
+           <rect>
+            <x>250</x>
+            <y>810</y>
+            <width>71</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="incomesource_2">
+          <property name="geometry">
+           <rect>
+            <x>570</x>
+            <y>800</y>
+            <width>71</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="regionpays_2">
+          <property name="geometry">
+           <rect>
+            <x>900</x>
+            <y>790</y>
+            <width>71</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QStackedWidget" name="stackedWidget_4">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>520</y>
+            <width>1021</width>
+            <height>171</height>
+           </rect>
+          </property>
+          <property name="currentIndex">
+           <number>1</number>
+          </property>
+          <widget class="QWidget" name="page_23"/>
+          <widget class="QWidget" name="page_24">
+           <widget class="QLabel" name="lblincomeearmed_2">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>151</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Garamond</family>
+              <pointsize>14</pointsize>
+              <weight>75</weight>
+              <italic>false</italic>
+              <bold>true</bold>
+              <underline>true</underline>
+             </font>
+            </property>
+            <property name="text">
+             <string>Income - Earned</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="lbltotalincome_4">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>30</y>
+              <width>111</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Total Income</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="dollar_29">
+            <property name="geometry">
+             <rect>
+              <x>700</x>
+              <y>10</y>
+              <width>16</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>$</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="totalincomeearned_2">
+            <property name="geometry">
+             <rect>
+              <x>720</x>
+              <y>10</y>
+              <width>131</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QCheckBox" name="checkBox_2">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>70</y>
+              <width>271</width>
+              <height>17</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Apply Employmemt Exemption</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="dollar_30">
+            <property name="geometry">
+             <rect>
+              <x>695</x>
+              <y>40</y>
+              <width>21</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>-$</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="employmentallowance_3">
+            <property name="geometry">
+             <rect>
+              <x>720</x>
+              <y>40</y>
+              <width>131</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="earnedpct_2">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>100</y>
+              <width>31</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="lblpctof_2">
+            <property name="geometry">
+             <rect>
+              <x>70</x>
+              <y>120</y>
+              <width>291</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>% of                                                $</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="netincome_2">
+            <property name="geometry">
+             <rect>
+              <x>360</x>
+              <y>120</y>
+              <width>131</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="lbleqbasehc_2">
+            <property name="geometry">
+             <rect>
+              <x>510</x>
+              <y>110</y>
+              <width>191</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>=  Base Housing Charge</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="basehc1_2">
+            <property name="geometry">
+             <rect>
+              <x>730</x>
+              <y>110</y>
+              <width>171</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="dollar_31">
+            <property name="geometry">
+             <rect>
+              <x>710</x>
+              <y>110</y>
+              <width>16</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>$</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="pct1_3">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>130</y>
+              <width>41</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="page_25">
+           <widget class="QLabel" name="lblincomesocialassesstance_2">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>221</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Garamond</family>
+              <pointsize>14</pointsize>
+              <weight>75</weight>
+              <italic>false</italic>
+              <bold>true</bold>
+              <underline>true</underline>
+             </font>
+            </property>
+            <property name="text">
+             <string>Income - Social Assistance</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="lbltotalincomesa_2">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>30</y>
+              <width>111</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Total Income</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="dollar_32">
+            <property name="geometry">
+             <rect>
+              <x>110</x>
+              <y>30</y>
+              <width>16</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>$</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="totalincomeesa_5">
+            <property name="geometry">
+             <rect>
+              <x>130</x>
+              <y>40</y>
+              <width>131</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="lblrentscla_2">
+            <property name="geometry">
+             <rect>
+              <x>280</x>
+              <y>30</y>
+              <width>81</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Rent Scale</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="lbltheshold_2">
+            <property name="geometry">
+             <rect>
+              <x>370</x>
+              <y>30</y>
+              <width>81</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Threshold</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="lblexthreshold_2">
+            <property name="geometry">
+             <rect>
+              <x>460</x>
+              <y>30</y>
+              <width>171</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Excess over Threshold</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="employmentallowance_4">
+            <property name="geometry">
+             <rect>
+              <x>700</x>
+              <y>80</y>
+              <width>131</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="pct1_4">
+            <property name="geometry">
+             <rect>
+              <x>700</x>
+              <y>60</y>
+              <width>111</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="lblpct1of_2">
+            <property name="geometry">
+             <rect>
+              <x>490</x>
+              <y>80</y>
+              <width>51</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>% of $</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="lblforprimary_2">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>60</y>
+              <width>101</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Garamond</family>
+              <pointsize>14</pointsize>
+              <weight>75</weight>
+              <italic>false</italic>
+              <bold>true</bold>
+              <underline>true</underline>
+             </font>
+            </property>
+            <property name="text">
+             <string>For Primary</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="lbsecondary_2">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>110</y>
+              <width>121</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Garamond</family>
+              <pointsize>14</pointsize>
+              <weight>75</weight>
+              <italic>false</italic>
+              <bold>true</bold>
+              <underline>true</underline>
+             </font>
+            </property>
+            <property name="text">
+             <string>For Secondary</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="primname_3">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>90</y>
+              <width>221</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="totalincomeesa_6">
+            <property name="geometry">
+             <rect>
+              <x>300</x>
+              <y>80</y>
+              <width>51</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="totalincomeesa_7">
+            <property name="geometry">
+             <rect>
+              <x>390</x>
+              <y>80</y>
+              <width>51</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="totalincomeesa_8">
+            <property name="geometry">
+             <rect>
+              <x>480</x>
+              <y>70</y>
+              <width>51</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="dollar_33">
+            <property name="geometry">
+             <rect>
+              <x>280</x>
+              <y>80</y>
+              <width>16</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>$</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="dollar_34">
+            <property name="geometry">
+             <rect>
+              <x>360</x>
+              <y>80</y>
+              <width>16</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>$</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="pctprim_2">
+            <property name="geometry">
+             <rect>
+              <x>440</x>
+              <y>80</y>
+              <width>41</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="dollar_35">
+            <property name="geometry">
+             <rect>
+              <x>550</x>
+              <y>80</y>
+              <width>71</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="lblequal_2">
+            <property name="geometry">
+             <rect>
+              <x>650</x>
+              <y>70</y>
+              <width>16</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>=</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="primname_4">
+            <property name="geometry">
+             <rect>
+              <x>60</x>
+              <y>160</y>
+              <width>221</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QLabel" name="dollar_36">
+          <property name="geometry">
+           <rect>
+            <x>460</x>
+            <y>410</y>
+            <width>16</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>$</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_26">
+         <widget class="QLabel" name="label_28">
+          <property name="geometry">
+           <rect>
+            <x>380</x>
+            <y>10</y>
+            <width>411</width>
+            <height>45</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Garamond</family>
+            <pointsize>26</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Output</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_27">
+         <widget class="QLabel" name="label_29">
+          <property name="geometry">
+           <rect>
+            <x>380</x>
+            <y>10</y>
+            <width>411</width>
+            <height>45</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Garamond</family>
+            <pointsize>26</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Print</string>
+          </property>
+          <property name="textFormat">
+           <enum>Qt::PlainText</enum>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_28">
+         <widget class="QLabel" name="label_30">
+          <property name="geometry">
+           <rect>
+            <x>380</x>
+            <y>10</y>
+            <width>411</width>
+            <height>45</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Garamond</family>
+            <pointsize>26</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Output to PDF</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_29">
+         <widget class="QLabel" name="label_31">
+          <property name="geometry">
+           <rect>
+            <x>380</x>
+            <y>10</y>
+            <width>411</width>
+            <height>45</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Garamond</family>
+            <pointsize>26</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Output to Docx</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_30">
+         <widget class="QLabel" name="label_32">
+          <property name="geometry">
+           <rect>
+            <x>380</x>
+            <y>10</y>
+            <width>411</width>
+            <height>45</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Garamond</family>
+            <pointsize>26</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Initalize</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_31">
+         <widget class="QLabel" name="label_33">
+          <property name="geometry">
+           <rect>
+            <x>389</x>
+            <y>10</y>
+            <width>411</width>
+            <height>45</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Garamond</family>
+            <pointsize>26</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Code Editor</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QFrame" name="frame_3">
+          <property name="geometry">
+           <rect>
+            <x>1080</x>
+            <y>-90</y>
+            <width>1021</width>
+            <height>945</height>
+           </rect>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="lblwidth_4">
+           <property name="geometry">
+            <rect>
+             <x>351</x>
+             <y>150</y>
+             <width>66</width>
+             <height>25</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Garamond</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Width</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="lblelementnane_3">
+           <property name="geometry">
+            <rect>
+             <x>460</x>
+             <y>120</y>
+             <width>140</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Garamond</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Element Name</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="lblniumberofitems_3">
+           <property name="geometry">
+            <rect>
+             <x>630</x>
+             <y>120</y>
+             <width>166</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Garamond</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Nunber of Items</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="leheight_3">
+           <property name="geometry">
+            <rect>
+             <x>-560</x>
+             <y>230</y>
+             <width>50</width>
+             <height>25</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lewidth_3">
+           <property name="geometry">
+            <rect>
+             <x>350</x>
+             <y>190</y>
+             <width>50</width>
+             <height>25</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="leeementname_3">
+           <property name="geometry">
+            <rect>
+             <x>460</x>
+             <y>190</y>
+             <width>130</width>
+             <height>25</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lenunberofitems_3">
+           <property name="geometry">
+            <rect>
+             <x>670</x>
+             <y>190</y>
+             <width>50</width>
+             <height>25</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="leitem_3">
+           <property name="geometry">
+            <rect>
+             <x>358</x>
+             <y>364</y>
+             <width>766</width>
+             <height>25</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="lblitem_3">
+           <property name="geometry">
+            <rect>
+             <x>360</x>
+             <y>360</y>
+             <width>773</width>
+             <height>25</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="btmedit_3">
+           <property name="geometry">
+            <rect>
+             <x>1133</x>
+             <y>360</y>
+             <width>60</width>
+             <height>26</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Garamond</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Edit</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="btmadd_3">
+           <property name="geometry">
+            <rect>
+             <x>1204</x>
+             <y>363</y>
+             <width>71</width>
+             <height>26</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Garamond</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>+Add</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="btmdelete_3">
+           <property name="geometry">
+            <rect>
+             <x>1285</x>
+             <y>363</y>
+             <width>80</width>
+             <height>26</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Garamond</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Delete</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QLabel" name="lbbaseelementl_3">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>100</y>
+            <width>130</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Garamond</family>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Base Element</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="lblpostonscreen_3">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>100</y>
+            <width>210</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Garamond</family>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Position on the Screen</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="lblheight_3">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>120</y>
+            <width>66</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Garamond</family>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Height</string>
+          </property>
+         </widget>
+         <widget class="QFrame" name="frame_4">
+          <property name="geometry">
+           <rect>
+            <x>710</x>
+            <y>730</y>
+            <width>1920</width>
+            <height>945</height>
+           </rect>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="lbltitle_2">
+           <property name="geometry">
+            <rect>
+             <x>930</x>
+             <y>20</y>
+             <width>170</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Garamond</family>
+             <pointsize>18</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Setting Editor</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="lbbaseelementl_4">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>120</y>
+             <width>130</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Garamond</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Base Element</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="lblpostonscreen_4">
+           <property name="geometry">
+            <rect>
+             <x>204</x>
+             <y>120</y>
+             <width>210</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Garamond</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Position on the Screen</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="lblheight_4">
+           <property name="geometry">
+            <rect>
+             <x>210</x>
+             <y>150</y>
+             <width>66</width>
+             <height>25</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Garamond</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Height</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="lblwidth_5">
+           <property name="geometry">
+            <rect>
+             <x>351</x>
+             <y>150</y>
+             <width>66</width>
+             <height>25</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Garamond</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Width</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="lblelementnane_4">
+           <property name="geometry">
+            <rect>
+             <x>460</x>
+             <y>120</y>
+             <width>140</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Garamond</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Element Name</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="lblniumberofitems_5">
+           <property name="geometry">
+            <rect>
+             <x>630</x>
+             <y>120</y>
+             <width>166</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Garamond</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Nunber of Items</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="cboxbaseelemwnt_4">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>190</y>
+             <width>124</width>
+             <height>25</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Garamond</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="leheight_4">
+           <property name="geometry">
+            <rect>
+             <x>210</x>
+             <y>190</y>
+             <width>50</width>
+             <height>25</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lewidth_4">
+           <property name="geometry">
+            <rect>
+             <x>350</x>
+             <y>190</y>
+             <width>50</width>
+             <height>25</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="leeementname_4">
+           <property name="geometry">
+            <rect>
+             <x>460</x>
+             <y>190</y>
+             <width>130</width>
+             <height>25</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lenunberofitems_4">
+           <property name="geometry">
+            <rect>
+             <x>670</x>
+             <y>190</y>
+             <width>50</width>
+             <height>25</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="leitem_4">
+           <property name="geometry">
+            <rect>
+             <x>358</x>
+             <y>364</y>
+             <width>766</width>
+             <height>25</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="lblitem_4">
+           <property name="geometry">
+            <rect>
+             <x>360</x>
+             <y>360</y>
+             <width>773</width>
+             <height>25</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="btmedit_5">
+           <property name="geometry">
+            <rect>
+             <x>1133</x>
+             <y>360</y>
+             <width>60</width>
+             <height>26</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Garamond</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Edit</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="btmadd_5">
+           <property name="geometry">
+            <rect>
+             <x>1204</x>
+             <y>363</y>
+             <width>71</width>
+             <height>26</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Garamond</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>+Add</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="btmdelete_5">
+           <property name="geometry">
+            <rect>
+             <x>1285</x>
+             <y>363</y>
+             <width>80</width>
+             <height>26</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Garamond</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Delete</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QLabel" name="lblwidth_6">
+          <property name="geometry">
+           <rect>
+            <x>290</x>
+            <y>120</y>
+            <width>66</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Garamond</family>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Width</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="height_2">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>140</y>
+            <width>50</width>
+            <height>25</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="lblniumberofitems_6">
+          <property name="geometry">
+           <rect>
+            <x>670</x>
+            <y>90</y>
+            <width>166</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Garamond</family>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Nunber of Items</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="nunberofitems_2">
+          <property name="geometry">
+           <rect>
+            <x>700</x>
+            <y>140</y>
+            <width>50</width>
+            <height>25</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="wide_3">
+          <property name="geometry">
+           <rect>
+            <x>290</x>
+            <y>140</y>
+            <width>50</width>
+            <height>25</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QScrollArea" name="scrollArea_2">
+          <property name="geometry">
+           <rect>
+            <x>29</x>
+            <y>200</y>
+            <width>921</width>
+            <height>521</height>
+           </rect>
+          </property>
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_4">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>919</width>
+             <height>519</height>
+            </rect>
+           </property>
+           <widget class="QLabel" name="item_2">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>30</y>
+              <width>431</width>
+              <height>25</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="btmedit_6">
+            <property name="geometry">
+             <rect>
+              <x>540</x>
+              <y>30</y>
+              <width>60</width>
+              <height>26</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Garamond</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Edit</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="btmadd_6">
+            <property name="geometry">
+             <rect>
+              <x>620</x>
+              <y>30</y>
+              <width>71</width>
+              <height>26</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Garamond</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>+Add</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="btmdelete_6">
+            <property name="geometry">
+             <rect>
+              <x>710</x>
+              <y>30</y>
+              <width>80</width>
+              <height>26</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Garamond</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Delete</string>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QLabel" name="lblelememtname_2">
+          <property name="geometry">
+           <rect>
+            <x>390</x>
+            <y>100</y>
+            <width>120</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Element Name</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="wide_4">
+          <property name="geometry">
+           <rect>
+            <x>380</x>
+            <y>140</y>
+            <width>150</width>
+            <height>25</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_32">
+         <widget class="QLabel" name="label_34">
+          <property name="geometry">
+           <rect>
+            <x>330</x>
+            <y>10</y>
+            <width>411</width>
+            <height>45</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Garamond</family>
+            <pointsize>26</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Members</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_33">
+         <widget class="QLabel" name="label_35">
+          <property name="geometry">
+           <rect>
+            <x>390</x>
+            <y>10</y>
+            <width>411</width>
+            <height>45</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Garamond</family>
+            <pointsize>26</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Units</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_34">
+         <widget class="QLabel" name="label_36">
+          <property name="geometry">
+           <rect>
+            <x>289</x>
+            <y>19</y>
+            <width>411</width>
+            <height>45</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Garamond</family>
+            <pointsize>26</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Rare Scales</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_35">
+         <widget class="QLabel" name="label_37">
+          <property name="geometry">
+           <rect>
+            <x>380</x>
+            <y>10</y>
+            <width>411</width>
+            <height>45</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Garamond</family>
+            <pointsize>26</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Calendar</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_36">
+         <widget class="QLabel" name="label_38">
+          <property name="geometry">
+           <rect>
+            <x>380</x>
+            <y>10</y>
+            <width>411</width>
+            <height>45</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Garamond</family>
+            <pointsize>26</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Overview</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_37">
+         <widget class="QLabel" name="label_39">
+          <property name="geometry">
+           <rect>
+            <x>289</x>
+            <y>10</y>
+            <width>411</width>
+            <height>45</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Garamond</family>
+            <pointsize>26</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Input</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_38">
+         <widget class="QLabel" name="label_40">
+          <property name="geometry">
+           <rect>
+            <x>380</x>
+            <y>10</y>
+            <width>411</width>
+            <height>45</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Garamond</family>
+            <pointsize>26</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Output</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_39">
+         <widget class="QLabel" name="label_41">
+          <property name="geometry">
+           <rect>
+            <x>280</x>
+            <y>10</y>
+            <width>411</width>
+            <height>45</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Garamond</family>
+            <pointsize>26</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Codes</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_40">
+         <widget class="QLabel" name="label_42">
+          <property name="geometry">
+           <rect>
+            <x>380</x>
+            <y>10</y>
+            <width>411</width>
+            <height>45</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Garamond</family>
+            <pointsize>26</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Calendar</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="secondname">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>150</y>
+          <width>221</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="dollar_37">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>130</y>
+          <width>16</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>$</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="dollar_38">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>130</y>
+          <width>16</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>$</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="totalincomeesa_9">
+        <property name="geometry">
+         <rect>
+          <x>520</x>
+          <y>150</y>
+          <width>51</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="pctist1000">
+        <property name="geometry">
+         <rect>
+          <x>440</x>
+          <y>120</y>
+          <width>51</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblpctprim">
+        <property name="geometry">
+         <rect>
+          <x>490</x>
+          <y>80</y>
+          <width>51</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>% of $</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblpctsecondB">
+        <property name="geometry">
+         <rect>
+          <x>810</x>
+          <y>110</y>
+          <width>51</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>% of $</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblequal_3">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>120</y>
+          <width>16</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>=</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblequal_4">
+        <property name="geometry">
+         <rect>
+          <x>950</x>
+          <y>110</y>
+          <width>16</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>=</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="rentscalesecond">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>130</y>
+          <width>51</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="thresholdsecond">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>130</y>
+          <width>51</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="exthreshold">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>120</y>
+          <width>71</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="rentscaleprim_2">
+        <property name="geometry">
+         <rect>
+          <x>710</x>
+          <y>110</y>
+          <width>51</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="rentscaleprim_3">
+        <property name="geometry">
+         <rect>
+          <x>700</x>
+          <y>120</y>
+          <width>71</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="emaindersecd">
+        <property name="geometry">
+         <rect>
+          <x>870</x>
+          <y>110</y>
+          <width>71</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="netremamderscond">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>110</y>
+          <width>71</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="dollar_14">
+        <property name="geometry">
+         <rect>
+          <x>960</x>
+          <y>110</y>
+          <width>16</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>$</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="dollar_39">
+        <property name="geometry">
+         <rect>
+          <x>670</x>
+          <y>70</y>
+          <width>16</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>$</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="dollar_10">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>410</y>
+        <width>16</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>$</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page2">
+     <widget class="QLabel" name="lbloutput">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>0</y>
+        <width>411</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Garamond</family>
+        <pointsize>26</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Output</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page3">
+     <widget class="QLabel" name="liltitleprint">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>10</y>
+        <width>411</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Garamond</family>
+        <pointsize>26</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Print</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::PlainText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page4">
+     <widget class="QLabel" name="lbktitlepdf">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>10</y>
+        <width>411</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Garamond</family>
+        <pointsize>26</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>PDF</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page5">
+     <widget class="QLabel" name="lbltitlrdocx">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>10</y>
+        <width>411</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Garamond</family>
+        <pointsize>26</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Docx</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page6">
+     <widget class="QLabel" name="lbltitleinitslize">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>10</y>
+        <width>411</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Garamond</family>
+        <pointsize>26</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Initalize</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page7">
+     <widget class="QLabel" name="lbltitlecodeediior">
+      <property name="geometry">
+       <rect>
+        <x>389</x>
+        <y>10</y>
+        <width>411</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Garamond</family>
+        <pointsize>26</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Code Editor</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frmcodeelements">
+      <property name="geometry">
+       <rect>
+        <x>1080</x>
+        <y>-90</y>
+        <width>1021</width>
+        <height>945</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="lblwidth">
+       <property name="geometry">
+        <rect>
+         <x>351</x>
+         <y>150</y>
+         <width>66</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Garamond</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Width</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblelementnane">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>120</y>
+         <width>140</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Garamond</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Element Name</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblniumberofitems">
+       <property name="geometry">
+        <rect>
+         <x>630</x>
+         <y>120</y>
+         <width>166</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Garamond</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Nunber of Items</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="leheight">
+       <property name="geometry">
+        <rect>
+         <x>-560</x>
+         <y>230</y>
+         <width>50</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lewidth">
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>190</y>
+         <width>50</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="leeementname">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>190</y>
+         <width>130</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lenunberofitems">
+       <property name="geometry">
+        <rect>
+         <x>670</x>
+         <y>190</y>
+         <width>50</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="leitem">
+       <property name="geometry">
+        <rect>
+         <x>358</x>
+         <y>364</y>
+         <width>766</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblitem">
+       <property name="geometry">
+        <rect>
+         <x>360</x>
+         <y>360</y>
+         <width>773</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btmedit">
+       <property name="geometry">
+        <rect>
+         <x>1133</x>
+         <y>360</y>
+         <width>60</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Garamond</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Edit</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btmadd">
+       <property name="geometry">
+        <rect>
+         <x>1204</x>
+         <y>363</y>
+         <width>71</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Garamond</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>+Add</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btmdelete">
+       <property name="geometry">
+        <rect>
+         <x>1285</x>
+         <y>363</y>
+         <width>80</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Garamond</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Delete</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="lbbaseelementl">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>130</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Garamond</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Base Element</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cboxbaseelemwnt">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>140</y>
+        <width>124</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Garamond</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblpostonscreen">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>100</y>
+        <width>210</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Garamond</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Position on the Screen</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblheight">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>120</y>
+        <width>66</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Garamond</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Height</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="height">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>140</y>
+        <width>50</width>
+        <height>25</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblniumberofitems_4">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>90</y>
+        <width>166</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Garamond</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Nunber of Items</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="nunberofitems">
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>140</y>
+        <width>50</width>
+        <height>25</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="wide">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>140</y>
+        <width>50</width>
+        <height>25</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>220</y>
+        <width>921</width>
+        <height>521</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>919</width>
+         <height>519</height>
+        </rect>
+       </property>
+       <widget class="QLabel" name="item">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>30</y>
+          <width>431</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btmedit_4">
+        <property name="geometry">
+         <rect>
+          <x>540</x>
+          <y>30</y>
+          <width>60</width>
+          <height>26</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Garamond</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Edit</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btmadd_4">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>30</y>
+          <width>71</width>
+          <height>26</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Garamond</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>+Add</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btmdelete_4">
+        <property name="geometry">
+         <rect>
+          <x>710</x>
+          <y>30</y>
+          <width>80</width>
+          <height>26</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Garamond</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Delete</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="lblelememtname">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>100</y>
+        <width>120</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Element Name</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="wide_2">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>140</y>
+        <width>150</width>
+        <height>25</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page8">
+     <widget class="QLabel" name="lbbltitlemrmbers">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>10</y>
+        <width>411</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Garamond</family>
+        <pointsize>26</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Members</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page9">
+     <widget class="QLabel" name="llbltitileunits">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>10</y>
+        <width>411</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Garamond</family>
+        <pointsize>26</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Units</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page10">
+     <widget class="QLabel" name="lblratescales">
+      <property name="geometry">
+       <rect>
+        <x>289</x>
+        <y>19</y>
+        <width>411</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Garamond</family>
+        <pointsize>26</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Rate Scales</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page11">
+     <widget class="QLabel" name="lbltitlecalendar">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>10</y>
+        <width>411</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Garamond</family>
+        <pointsize>26</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Calendar</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page12">
+     <widget class="QLabel" name="lbloverview">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>10</y>
+        <width>411</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Garamond</family>
+        <pointsize>26</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Overview</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page13">
+     <widget class="QLabel" name="lblhllpinput">
+      <property name="geometry">
+       <rect>
+        <x>289</x>
+        <y>10</y>
+        <width>411</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Garamond</family>
+        <pointsize>26</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Input</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page14">
+     <widget class="QLabel" name="lblhlpoutput">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>10</y>
+        <width>411</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Garamond</family>
+        <pointsize>26</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Output</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page15">
+     <widget class="QLabel" name="lblhlpcodes">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>10</y>
+        <width>411</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Garamond</family>
+        <pointsize>26</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Codes</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page16">
+     <widget class="QLabel" name="lblhlpcalandar">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>10</y>
+        <width>411</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Garamond</family>
+        <pointsize>26</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Calendar</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1100</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuCalculate">
+    <property name="title">
+     <string>Calculate</string>
+    </property>
+    <addaction name="actionInpot"/>
+    <addaction name="actionOutput"/>
+    <addaction name="actionPrint"/>
+    <addaction name="actionPDF"/>
+    <addaction name="actionDoxx"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuSettungs">
+    <property name="title">
+     <string>Setting</string>
+    </property>
+    <addaction name="actionInitalize"/>
+    <addaction name="actionSetting_Editor"/>
+    <addaction name="actionMembers"/>
+    <addaction name="actionUnits"/>
+    <addaction name="actionRentScales"/>
+    <addaction name="actionCalendar"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionhpOverview"/>
+    <addaction name="actionhlpInput"/>
+    <addaction name="actionhlpoutput"/>
+    <addaction name="actionhlpcodes"/>
+    <addaction name="actionhlpcalendar"/>
+   </widget>
+   <addaction name="menuCalculate"/>
+   <addaction name="menuSettungs"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionInpot">
+   <property name="text">
+    <string>Input</string>
+   </property>
+  </action>
+  <action name="actionOutput">
+   <property name="text">
+    <string>Output</string>
+   </property>
+  </action>
+  <action name="actionPDF">
+   <property name="text">
+    <string>PDF</string>
+   </property>
+  </action>
+  <action name="actionDoxx">
+   <property name="text">
+    <string>Doxx</string>
+   </property>
+  </action>
+  <action name="actionPrint">
+   <property name="text">
+    <string>Print</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionInitalize">
+   <property name="text">
+    <string>Initalize</string>
+   </property>
+  </action>
+  <action name="actionSetting_Editor">
+   <property name="text">
+    <string>Codes Editor</string>
+   </property>
+  </action>
+  <action name="actionMembers">
+   <property name="text">
+    <string>Members</string>
+   </property>
+  </action>
+  <action name="actionUnits">
+   <property name="text">
+    <string>Units</string>
+   </property>
+  </action>
+  <action name="actionRentScales">
+   <property name="text">
+    <string>RentScales</string>
+   </property>
+  </action>
+  <action name="actionCalendar">
+   <property name="text">
+    <string>Calendar</string>
+   </property>
+  </action>
+  <action name="actionhpOverview">
+   <property name="text">
+    <string>Overview</string>
+   </property>
+  </action>
+  <action name="actionhlpInput">
+   <property name="text">
+    <string>Input</string>
+   </property>
+  </action>
+  <action name="actionhlpoutput">
+   <property name="text">
+    <string>Output</string>
+   </property>
+  </action>
+  <action name="actionhlpcodes">
+   <property name="text">
+    <string>Codes</string>
+   </property>
+  </action>
+  <action name="actionhlpcalendar">
+   <property name="text">
+    <string>Calendar</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
